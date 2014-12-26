@@ -21,5 +21,8 @@
     },
     "default_title": "playback speed extension",
     "default_popup": "popup.html"
-  }
+  },
+  "permissions": [
+      "tabs", "http://*/*", "https://*/*"
+   ]
 }
