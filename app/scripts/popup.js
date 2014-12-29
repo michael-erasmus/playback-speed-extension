@@ -21,6 +21,10 @@ var setSpeedLabel = function(speed) {
   });
 };
 
+var setSpeedBadge = function(speed) {
+  chrome.browserAction.setBadgeText({text: speed + 'x'});
+};
+
 var elements = document.querySelectorAll('.speed');
 
 Array.prototype.forEach.call(elements, function(el){
@@ -30,6 +34,7 @@ Array.prototype.forEach.call(elements, function(el){
     for(var o in response) {
       if(response[o] > 0) {
         setSpeedLabel(response[o]);
+        setSpeedBadge(response[o]);
       }
     }
   });
@@ -38,6 +43,7 @@ Array.prototype.forEach.call(elements, function(el){
     var setSpeedCode = '(' + setSpeed.toString() + '(' + el.value +' ))';
     chrome.tabs.executeScript(null, {code:setSpeedCode, allFrames: true});
     setSpeedLabel(el.value);
+    setSpeedBadge(el.value);
   };
   el.oninput = el.onchange;
 });
