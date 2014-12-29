@@ -4,6 +4,8 @@ A super simple chrome extension to control the playback speed of any video eleme
 
 Made with the awesome [Chrome Extension Generator](https://github.com/yeoman/generator-chrome-extension)
 
+The bundled extension can be downloaded [here](https://chrome.google.com/webstore/detail/playback-speed-extension/jokfkmkphpmdnonolbpnpacodbgjfeam/related)
+
 Copyright (c) 2014 Michael Erasmus
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
