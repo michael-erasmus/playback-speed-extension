@@ -2,9 +2,9 @@
 
 A super simple chrome extension to control the playback speed of any video element
 
-The MIT License (MIT)
+Made with the awesome [Chrome Extension Generator](https://github.com/yeoman/generator-chrome-extension)
 
-Copyright (c) 2104 Michael Erasmus
+Copyright (c) 2014 Michael Erasmus
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
